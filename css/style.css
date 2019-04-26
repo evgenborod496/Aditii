@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Bebas Neue W01';
+    src: url('d6e08ef3-40db-4ac3-82df-f062f55a72f5.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Bebas Neue W01', sans-serif;
+}
+
+
+/*header*/
+
+.container {
+    width: 875px;
+    margin: auto;
+}
+
+.header__preview {
+    display: flex;
+    width: 982px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    font-family: 'Lobster', cursive;
+    color: #3cc3b5;
+    font-size: 49px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.header__search {
+    width: 434px;
+    height: 31px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    margin-left: 171px;
+    margin-top: 26px;
+    outline: 0;
+    letter-spacing: 0.8px;
+    background: url('../img/search-icon.png') no-repeat 98% 50%;
+}
+
+.header__basket {
+    display: flex;
+    justify-content: space-between;
+    width: 107px;
+    margin-left: 157px;
+    margin-top: 20px;
+}
+
+.header__basket-img {
+    background: url('../img/basket.png') no-repeat center;
+    height: 37px;
+    width: 41px;
+}
+
+.header__basket-price {
+    color: #a1a1a1;
+    font-size: 33px;
+    font-weight: 400;
+}
+
+.header__slider {
+    background-color: #4ccfc1;
+}
+
+.header__menu {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
+    margin-top: 16px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 986px;
+    margin: 0 auto;
+    padding: 7px 0;
+}
+
+.nav__link {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav__link:not(:last-child):after {
+    content: '|';
+    position: absolute;
+    right: -30px;
+}
+
+.popular-goods {
+    display: flex;
+    justify-content: space-between;
+    width: 780px;
+    margin: auto;
+    padding-top: 67px;
+    padding-bottom: 30px;
+}
+
+.popular-goods__img {
+    background: url('../img/main-t-shirt.png') no-repeat center;
+    height: 325px;
+    width: 278px;
+}
+
+.popular-goods__description {
+    width: 400px;
+}
+
+.popular-goods__title {
+    color: #ffffff;
+    font-size: 61px;
+    font-weight: 400;
+    line-height: 54px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.popular-goods__paragraph {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 27px;
+}
+
+.btn {
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.popular-goods__btn {
+    font-size: 27px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    height: 46px;
+    width: 133px;
+    display: inline-block;
+    text-align: center;
+    line-height: 41px;
+    margin-bottom: 48px;
+}
+
+.switcher {
+    display: flex;
+    justify-content: space-between;
+    width: 96px;
+}
+
+.switcher__item {
+    background: url('../img/switcher-item.png') no-repeat center;
+    height: 9px;
+    width: 9px;
+}
+
+.switcher__item_active {
+    background: url('../img/switcher-item-active.png') no-repeat center;
+}
