@@ -20,7 +20,8 @@
 .header__preview {
     display: flex;
     width: 982px;
-    margin: 0 auto;
+    margin: auto;
+    padding-top: 20px;
 }
 
 .header__logo {
@@ -28,7 +29,6 @@
     color: #3cc3b5;
     font-size: 49px;
     font-weight: 400;
-    margin-top: 20px;
 }
 
 .header__search {
@@ -38,7 +38,7 @@
     padding: 10px;
     border: 1px solid #e1e1e1;
     margin-left: 171px;
-    margin-top: 26px;
+    margin-top: 10px;
     outline: 0;
     letter-spacing: 0.8px;
     background: url('../img/search-icon.png') no-repeat 98% 50%;
@@ -49,7 +49,6 @@
     justify-content: space-between;
     width: 107px;
     margin-left: 157px;
-    margin-top: 20px;
 }
 
 .header__basket-img {
@@ -77,7 +76,7 @@
     display: flex;
     justify-content: space-between;
     width: 986px;
-    margin: 0 auto;
+    margin: auto;
     padding: 7px 0;
 }
 
@@ -138,7 +137,8 @@
     color: #ffffff;
     font-weight: 400;
     text-decoration: none;
-    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
 }
 
 .popular-goods__btn {
@@ -147,8 +147,6 @@
     border-radius: 10px;
     height: 46px;
     width: 133px;
-    display: inline-block;
-    text-align: center;
     line-height: 41px;
     margin-bottom: 48px;
 }
@@ -167,4 +165,164 @@
 
 .switcher__item_active {
     background: url('../img/switcher-item-active.png') no-repeat center;
+}
+
+
+/*main*/
+
+.main__slider-item-1 {
+    margin-right: 84px;
+}
+
+.main__slider-item-2 {
+    margin-right: 109px;
+}
+
+.slider {
+    display: flex;
+    width: 956px;
+    padding: 21px 211px 18px 140px;
+    margin: auto;
+}
+
+.slider__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__img-1 {
+    background: url('../img/shoes.png') no-repeat center;
+    height: 151px;
+    width: 178px;
+}
+
+.slider__img-2 {
+    background: url('../img/T-shirt.png') no-repeat center;
+    height: 132px;
+    width: 132px;
+    margin-right: 52px;
+}
+
+.slider__img-3 {
+    background: url('../img/trousers.png') no-repeat center;
+    height: 100%;
+    width: 100%;
+    margin-right: 77px;
+}
+
+.product-title {
+    color: #afafaf;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.slider__title {
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.slider__btn {
+    height: 14px;
+    width: 30px;
+    background-color: #3cc395;
+    padding: 9px 15px;
+    line-height: 16px;
+    border-radius: 3px;
+}
+
+.title {
+    background-color: #3cc395;
+    color: #ffffff;
+    font-size: 31px;
+    font-weight: 400;
+    padding: 24px 186px 21px;
+    margin: 0;
+}
+
+.feature-products {
+    display: flex;
+    flex-wrap: wrap;
+    width: 874px;
+    padding-top: 48px;
+    padding-bottom: 26px;
+}
+
+.feature-products__item {
+    width: 253px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+    padding-top: 21px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    border-bottom: 5px solid #3cc395;
+    margin-bottom: 47px;
+    margin-right: 38px;
+}
+
+.product-title_justify_center {
+    margin: 0;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.feature-products__img {
+    margin: auto;
+    margin-bottom: 9px;
+}
+
+.product-price {
+    color: #afafaf;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.container__img-1 {
+    background: url('../img/featured-shoe.png') no-repeat center;
+    height: 126px;
+    width: 189px;
+}
+
+.container__img-2 {
+    background: url('../img/T-shirt-dark-blue.png') no-repeat center;
+    height: 116px;
+    width: 116px;
+}
+
+.container__img-3 {
+    background: url('../img/featured-products-grey-t-shirt.png') no-repeat center;
+    height: 118px;
+    width: 105px;
+}
+
+.container__img-4 {
+    background: url('../img/featured-wallet.png') no-repeat center;
+    height: 131px;
+    width: 175px;
+}
+
+.container__img-5 {
+    background: url('../img/featured-handbag.png') no-repeat center;
+    height: 126px;
+    width: 140px;
+}
+
+.container__img-6 {
+    background: url('../img/featured-trousers.png') no-repeat center;
+    height: 119px;
+    width: 66px;
+}
+
+.feature-products__btn {
+    height: 31px;
+    width: 74px;
+    font-size: 20px;
+    background-color: #3cc395;
+    line-height: 31px;
+    border-radius: 5px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    width: 126px;
+    margin: auto;
 }
