@@ -12,16 +12,12 @@
 
 /*header*/
 
-.container {
-    width: 875px;
-    margin: auto;
-}
-
 .header__preview {
     display: flex;
-    width: 982px;
+    justify-content: space-between;
+    max-width: 936px;
     margin: auto;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 
 .header__logo {
@@ -37,8 +33,7 @@
     box-sizing: border-box;
     padding: 10px;
     border: 1px solid #e1e1e1;
-    margin-left: 171px;
-    margin-top: 10px;
+    margin: 10px 0;
     outline: 0;
     letter-spacing: 0.8px;
     background: url('../img/search-icon.png') no-repeat 98% 50%;
@@ -48,7 +43,6 @@
     display: flex;
     justify-content: space-between;
     width: 107px;
-    margin-left: 157px;
 }
 
 .header__basket-img {
@@ -63,19 +57,31 @@
     font-weight: 400;
 }
 
+.menu {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: none;
+}
+
+.menu__line {
+    background-color: #4ccfc1;
+    height: 3px;
+    width: 35px;
+    margin-bottom: 6px;
+}
+
 .header__slider {
     background-color: #4ccfc1;
 }
 
 .header__menu {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.08);
-    margin-top: 16px;
 }
 
 .header__nav {
     display: flex;
-    justify-content: space-between;
-    width: 986px;
+    max-width: 986px;
     margin: auto;
     padding: 7px 0;
 }
@@ -88,6 +94,10 @@
     position: relative;
 }
 
+.nav__link:not(:last-child) {
+    margin-right: 42px;
+}
+
 .nav__link:not(:last-child):after {
     content: '|';
     position: absolute;
@@ -96,8 +106,7 @@
 
 .popular-goods {
     display: flex;
-    justify-content: space-between;
-    width: 780px;
+    justify-content: center;
     margin: auto;
     padding-top: 67px;
     padding-bottom: 30px;
@@ -107,6 +116,7 @@
     background: url('../img/main-t-shirt.png') no-repeat center;
     height: 325px;
     width: 278px;
+    margin-right: 101px;
 }
 
 .popular-goods__description {
@@ -147,7 +157,7 @@
     border-radius: 10px;
     height: 46px;
     width: 133px;
-    line-height: 41px;
+    line-height: 47px;
     margin-bottom: 48px;
 }
 
@@ -170,44 +180,64 @@
 
 /*main*/
 
-.main__slider-item-1 {
-    margin-right: 84px;
-}
-
-.main__slider-item-2 {
-    margin-right: 109px;
-}
-
 .slider {
     display: flex;
-    width: 956px;
-    padding: 21px 211px 18px 140px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 21px 0;
     margin: auto;
+    position: relative;
+}
+
+.slider::before {
+    content: '';
+    background: url('../img/arrow-left.png') no-repeat center;
+    height: 88px;
+    width: 29px;
+    position: absolute;
+    top: 50px;
+    left: 177px;
+}
+
+.slider::after {
+    content: '';
+    background: url('../img/arrow-right.png') no-repeat center;
+    height: 88px;
+    width: 29px;
+    position: absolute;
+    top: 50px;
+    right: 177px;
 }
 
 .slider__item {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.slider__img-1 {
+.slider__item:not(:last-child) {
+    margin-right: 79px;
+}
+
+.slider__img {
+    margin-right: 20px;
+}
+
+.slider__img_number_1 {
     background: url('../img/shoes.png') no-repeat center;
     height: 151px;
     width: 178px;
 }
 
-.slider__img-2 {
+.slider__img_number_2 {
     background: url('../img/T-shirt.png') no-repeat center;
     height: 132px;
     width: 132px;
-    margin-right: 52px;
 }
 
-.slider__img-3 {
+.slider__img_number_3 {
     background: url('../img/trousers.png') no-repeat center;
-    height: 100%;
-    width: 100%;
-    margin-right: 77px;
+    height: 127px;
+    width: 71px;
 }
 
 .product-title {
@@ -235,16 +265,19 @@
     color: #ffffff;
     font-size: 31px;
     font-weight: 400;
-    padding: 24px 186px 21px;
+    padding: 24px 0;
     margin: 0;
+    text-align: center;
 }
 
 .feature-products {
     display: flex;
+    max-width: 875px;
+    justify-content: center;
     flex-wrap: wrap;
-    width: 874px;
     padding-top: 48px;
     padding-bottom: 26px;
+    margin: auto;
 }
 
 .feature-products__item {
@@ -255,7 +288,10 @@
     box-sizing: border-box;
     border-bottom: 5px solid #3cc395;
     margin-bottom: 47px;
-    margin-right: 38px;
+}
+
+.feature-products__item:not(:nth-child(3n+3)) {
+    margin-right: 54px;
 }
 
 .product-title_justify_center {
@@ -275,37 +311,37 @@
     font-weight: 400;
 }
 
-.container__img-1 {
+.feature-products__img_number_1 {
     background: url('../img/featured-shoe.png') no-repeat center;
     height: 126px;
     width: 189px;
 }
 
-.container__img-2 {
+.feature-products__img_number_2 {
     background: url('../img/T-shirt-dark-blue.png') no-repeat center;
     height: 116px;
     width: 116px;
 }
 
-.container__img-3 {
+.feature-products__img_number_3 {
     background: url('../img/featured-products-grey-t-shirt.png') no-repeat center;
     height: 118px;
     width: 105px;
 }
 
-.container__img-4 {
+.feature-products__img_number_4 {
     background: url('../img/featured-wallet.png') no-repeat center;
     height: 131px;
     width: 175px;
 }
 
-.container__img-5 {
+.feature-products__img_number_5 {
     background: url('../img/featured-handbag.png') no-repeat center;
     height: 126px;
     width: 140px;
 }
 
-.container__img-6 {
+.feature-products__img_number_6 {
     background: url('../img/featured-trousers.png') no-repeat center;
     height: 119px;
     width: 66px;
@@ -337,12 +373,14 @@
 
 .links {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-bottom: 42px;
+    margin: auto;
 }
 
-.links__item {
-    width: 134px;
+.links__item:not(:last-child) {
+    margin-right: 110px;
 }
 
 .links__title {
