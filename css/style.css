@@ -180,64 +180,76 @@
 
 /*main*/
 
-.slider {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 21px 0;
+.slider-wrap {
+    max-width: 988px;
     margin: auto;
     position: relative;
+    overflow: hidden;
 }
 
-.slider::before {
-    content: '';
-    background: url('../img/arrow-left.png') no-repeat center;
-    height: 88px;
-    width: 29px;
-    position: absolute;
-    top: 50px;
-    left: 177px;
-}
-
-.slider::after {
-    content: '';
-    background: url('../img/arrow-right.png') no-repeat center;
-    height: 88px;
-    width: 29px;
-    position: absolute;
-    top: 50px;
-    right: 177px;
+.slider {
+    height: 144px;
 }
 
 .slider__item {
     display: flex;
     justify-content: center;
+    margin-right: 85px;
 }
 
-.slider__item:not(:last-child) {
-    margin-right: 79px;
+.slider__item:last-child {
+    margin-right: 0;
+}
+
+.slider__container {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    transition: 0.7s;
+    margin: 0 63px;
+    left: 0;
+}
+
+.slider__slide {
+    display: flex;
+    margin-right: 85px;
+}
+
+.arrow {
+    width: 35px;
+    height: 35px;
+    border: 3px solid #cccccc;
+    border-top: none;
+    border-right: none;
+    position: absolute;
+    top: 55px;
+}
+
+.arrow_prev {
+    transform: rotate(45deg);
+    left: 7px;
+}
+
+.arrow_next {
+    transform: rotate(-135deg);
+    right: 7px;
 }
 
 .slider__img {
     margin-right: 20px;
+    width: 132px;
 }
 
 .slider__img_number_1 {
     background: url('../img/shoes.png') no-repeat center;
-    height: 151px;
-    width: 178px;
 }
 
 .slider__img_number_2 {
     background: url('../img/T-shirt.png') no-repeat center;
-    height: 132px;
-    width: 132px;
 }
 
 .slider__img_number_3 {
     background: url('../img/trousers.png') no-repeat center;
-    height: 127px;
-    width: 71px;
 }
 
 .product-title {
